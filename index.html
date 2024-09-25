@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 29 Assignment</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Counter Section-->
+      <section>
+        <h2 id="counter-title">Counter</h2>
+        <div class="counter-container">
+        <button id="plus">+</button>
+        <h1 id="count-number">0</h1>
+        <button id="minus">-</button>
+        </div>
+      </section>
+
+      <!-- Accordion Section-->
+      <section>
+        <h2 id="accordion-title">Accordion</h2>
+        <button class="accordion">1. What is an accordion in web design?</button>
+        <div class="panel">
+          <p>
+            An accordion is a UI component that expands and collapses sections of content, helping to organize information neatly.
+          </p>
+        </div>
+        <button class="accordion">2. How do you create an accordion?</button>
+        <div class="panel">
+          <p>
+            You create an accordion using HTML for structure, CSS for styling, and JavaScript for toggle functionality when headers are clicked.
+          </p>
+        </div>
+        <button class="accordion">3. Why use accordions?</button>
+        <div class="panel">
+          <p>
+            Accordions save space and help users easily find information by allowing them to expand only what they want to see.
+          </p>
+        </div>
+        <button class="accordion">4. What is a common mistake when creating accordions?</button>
+        <div class="panel">
+          <p>
+            A common mistake is not making the accordion accessible, such as failing to implement keyboard navigation or proper ARIA attributes for screen readers.
+          </p>
+        </div>
+
+        <!-- Tabs Section-->
+        <section>
+          <h2 id="tabs-title">Tabs</h2>
+          <p>Click on the buttons inside the tabbed menu:</p>
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Dhaka')">
+              Dhaka
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'London')">
+              London
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">
+              Paris
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+              Tokyo
+            </button>
+          </div>
+          <div id="Dhaka" class="tabcontent">
+            <h3>Dhaka</h3>
+            <p>Dhaka is the capital city of Bangladesh.</p>
+          </div>
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
